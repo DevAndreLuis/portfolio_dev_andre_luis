@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* ESTILO GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #000;
+  
+  
+ 
+ 
+}
+
+header {
+  padding: 40px 4%;
+  background-color: rgb(14, 13, 13);
+  box-shadow: 2px 2px 10px rgb(27, 105, 194);
+  border: none;
+   
+ 
+}
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3px;
+}
+/* ESTILO GLOBAL */
+.logo img {
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 100%;
+}
+
+/* Propriedades Cabeçalho */
+
+header > .interface {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+header a {
+  color: #646262;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+nav a:hover {
+  color: #fff;
+  transform: scale(1.6);
+  transform-origin: center top;
+  background: linear-gradient(
+    rgba(47, 29, 209, 0) 15px,
+    rgba(255, 255, 255, 0.5)
+  ); /* Degradê quase transparente */
+  border-radius: 20px;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+header .btn-contato button {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #0b6bd8;
+  border-radius: 30px;
+  border: none;
+  transition: background-color 0.3s ease, border 0.3s ease;
+  border: none;
+}
+
+header .btn-contato button:hover {
+  box-shadow: 1px 1px 5px rgb(227, 218, 235);
+  transform: scale(1.4);
+  transform-origin: center top;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.rotate {
+  border: 9px solid #e5e5e5;
+  width: 81px;
+  height: 81px;
+  border-top-color: #09a7af;
+  animation: is-rotating 5s infinite linear;
+  position: absolute;
+  border-radius: 100px;
+}
+
+.rotate:hover {
+  border: 9px solid #e5e5e5;
+  width: 81px;
+  height: 81px;
+  border-top-color: #09a7af;
+  animation: is-rotating 0.8s infinite linear;
+  position: absolute;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
